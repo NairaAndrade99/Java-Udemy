@@ -5,7 +5,7 @@
 
 > É um tipo estruturado que pode conter (membros)
 >> - Atributo (dados/campos)
->> - Métodos (finções/operações)
+>> - Métodos (funções/operações)
 
 > A classe também pode prover muitos outros recursos, tais como:
 >> - Contrutores

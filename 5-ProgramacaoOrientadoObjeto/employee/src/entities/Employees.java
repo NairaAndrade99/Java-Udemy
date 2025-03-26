@@ -7,16 +7,14 @@ public class Employees {
      public double tax;
 
 public double netSalary(){
-      return grossSalary + tax;
+      return grossSalary - tax;
 }
 public void increseSalary(double percentage){
-        grossSalary =+ ( grossSalary/100) *percentage;
+        grossSalary += grossSalary * percentage / 100.0;
 }
 
   public String toString(){
-      return "Employees: " 
-             + name +
-             String.format(",$ %.2f ", grossSalary);          
+      return  name + String.format(", $ %.2f ", netSalary() );          
 
 }
 

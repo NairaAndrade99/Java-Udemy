@@ -209,7 +209,7 @@ for (String nome: vect){
 * ##### Não aceita tipos primitivos 
 ### Sinatxe 
 ~~~~java 
-List <tipo> nome_da_lista = new Clases_que_implementa <> ();
+List <tipo> nome_da_lista = new Classe_que_implementa <> ();
 ~~~~
 + #### Imprimir a lista
 ~~~~java 
@@ -250,3 +250,63 @@ List <Integer> result = list.stream().filter(x -> x.charAt(0) == 'A').collect(Co
 String nome = list.stream().filter(x -> x.charAt(0) == 'A').findFirst().orElse(null)
 ~~~~
 
+-------
+### Exercicio de fixação 
+#### *_Criar uma lista do tipo classe_*
+~~~~java 
+List<Classe> lista = new ArrayList<>();
+~~~~
+#### *_Adicionando elementos na lista_*
+~~~~java 
+Interger atributo_classe = sc.nextInt();
+String atributo_classe = sc.nextLine();
+Double atributo_classe = sc.nextDouble();
+
+Classe clas = new Classe (atributo_classe ,atributo_classe ,atributo_classe );
+
+lista.add(clas)
+~~~~
+#### *__Procurando elemento com função__*
+~~~~java 
+System.out.print("Procurar elemento: ");
+Interger at = sc.nextInt();
+
+Ineteger pos = position (lista,at);
+if (pos == null){
+    System.out.println ("No exist ! ");
+}else {
+    list.get(pos).metodo_classe(valor);
+}
+
+// função
+public static Interger busca (Lista<classe> lista,Interger at){
+    for (int i = 0;i < lista.size();i++){
+         if (lista.get(i).getId() == id){
+              return 1;
+         }
+    }
+        return null;
+}
+~~~~
+#### *__No formato lambda__*
+~~~~java 
+Funcionario func = lista.stream().filter(x -> x.getId() == idFun).findFirst().orElse(null);
+~~~~
+-----
+### **MATRIZES**
+>-  Em programação, "matriz" é o nome dado a arranjos bidimensionais
+>>- Atenção: "vetor de vetores"
+>-  Arranjo (array) é uma estrutura de dados:
+>>- Homogênea (dados do mesmo tipo)
+>>- Ordenada (elementos acessados por meio de posições)
+>>- Alocada de uma vez só, em um bloco contíguo de memória
+>-  Vantagens: 
+>>- Acesso imediato aos elementos pela sua posição
+>-  Desvantagens:
+>>- Tamanho fixo
+>>- Dificuldade para se realizar inserções e deleções
+
+### Sintaxe 
+~~~~java 
+tipo nome_matriz [][] =  new tipo [linhas][colunas];
+~~~~

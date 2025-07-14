@@ -47,3 +47,10 @@ Repositories
   - Reuso
 * Nota: embora o símbolo UML para composição (todo-parte) seja o diamante preto, neste contexto estamos chamando de composição qualquer associação tipo "tem-um" e "tem-vários".
  
+ #### StringBuilder 
+
+ ~~~~java 
+   StringBuild sb = new StringBuilder();
+   sb.append();
+ ~~~~
+

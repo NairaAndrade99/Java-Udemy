@@ -82,3 +82,18 @@ Account y = new SavingsAcoount ();
 x.withdraw();
 y.withdraw();
 ~~~~
+
+## Classes abstratas 
+* São classes que não podem ser instanciadas 
+* É uma forma de garantir herança total: somente subclasses  não abstratas podem ser instanciadas, mas nunca a superclasse abstrata
+
+~~~~java 
+
+public abstract class NomeClasse{
+
+}
+~~~~
+## Métodos abstratos 
+* São métodos que não possuem implementação 
+* Métodos precisam ser abstratos qundo a classe é genérica demais para conter sua implemntação 
+* Se uma classe possuir pelo menos um método abstrato, então esta classe tambem é abstrata

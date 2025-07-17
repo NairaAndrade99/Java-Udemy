@@ -9,6 +9,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         List<Shape> list = new ArrayList<>();
+        char op ;
 
         System.out.println("Enter the number of shapes:");
         int num = sc.nextInt();
@@ -17,7 +18,7 @@ public class App {
             System.out.println("Shape # %d data:"+ i + 1);
 
             System.out.println("RectangleorCircle(r/c)? ");
-            char op = sc.next().charAt(0);
+            op = sc.next().charAt(0);
 
             System.out.println(" Color (BLACK/BLUE/RED): ");
             String color = sc.next();

@@ -1,3 +1,4 @@
+package endentidade;
 public abstract class Shape {
     
     private Color color;

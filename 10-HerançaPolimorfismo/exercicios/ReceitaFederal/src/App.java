@@ -1,11 +1,16 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import entidades.Company;
+import entidades.Individual;
+import entidades.TaxPayer;
 
 public class App {
     public static void main(String[] args) throws Exception {
       Scanner sc = new Scanner (System.in);
 
-      List <TaxPayer> list = new ArrrayList<>();
+      List <TaxPayer> list = new ArrayList<>();
 
       System.out.print("Enter the number of tax payers:");
       int num = sc.nextInt();

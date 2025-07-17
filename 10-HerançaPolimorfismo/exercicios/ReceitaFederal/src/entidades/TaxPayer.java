@@ -1,4 +1,4 @@
-
+package entidades;
 public abstract class TaxPayer {
      private String name;
      private double anualIncome;
@@ -27,8 +27,7 @@ public abstract class TaxPayer {
     public void setAnualIncome(double anualIncome) {
         this.anualIncome = anualIncome;
     }
-   public double tax(){
-     return 0.0;
-   }
+   public abstract double tax();
+    
 
 }

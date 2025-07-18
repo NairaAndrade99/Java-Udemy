@@ -11,5 +11,26 @@
 * Deve ser especificado o tipo da exceçao a ser tratada (upcasting é permitido)
 
 #### Sintaxe 
+~~~java 
+try{
 
+}catch(ExceptionType e){
 
+}catch(ExceptionType e){
+
+}
+~~~
+### Bloco finally 
+* É um bloco que contem codigo a ser executado independentemente de ter ocorrido ou não uma exceção 
+* Exemplo classico: fechar uma arquivo, conexão de banco de dados, ou outro recurso especifico ao final do processamento
+
+#### Sintaxe
+~~~ java 
+try{
+
+}catch(ExceptionType e ){
+
+}finally{
+
+}
+~~~~
